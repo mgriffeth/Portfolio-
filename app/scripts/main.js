@@ -1,1 +1,11 @@
-console.log('The Iron Yard Rocks');
+(function(){
+  angular.module('Portfolio',['ngRoute'])
+  .config(function($routeProvider){
+
+    $routeProvider.when('/',{
+       templateUrl:'home.html',
+       controller: 'HomeController'
+    });
+
+  });
+}());
