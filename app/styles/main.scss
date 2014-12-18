@@ -36,8 +36,23 @@ body {
 
 //footer///////////////////////////////////////
 #footer{
-  height:25px;
+
   background-color:HSLA(0, 0%, 100%, 1);
+  ul{
+    overflow: auto;
+    width: 60%;
+    margin: 0 auto;
+    li{
+      list-style: none;
+      display: inline-block;
+      float: left;
+      
+      border-width: 1px;
+      margin: 1em;
+      font-weight: 300;
+      font-size: 22px;
+    }
+  }
 }
 //footer--------------------------------------
 
