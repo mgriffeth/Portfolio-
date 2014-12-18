@@ -34,6 +34,13 @@ body {
 //header--------------------------------------
 
 
+//footer///////////////////////////////////////
+#footer{
+  height:25px;
+  background-color:HSLA(0, 0%, 100%, 1);
+}
+//footer--------------------------------------
+
 
 //home-view/////////////////////////////////////////
   #home-title{
@@ -64,9 +71,9 @@ body {
     }
   }
   #content{
-     background-color:HSLA(0, 0%, 100%, 1);
+     /* background-color:HSLA(0, 0%, 100%, 1); */
     #about{
-    /*   background-color:HSLA(0, 0%, 100%, 1); */
+      background-color:HSLA(0, 0%, 100%, 1);
       overflow:auto;
       h3{
         border-bottom-style: solid;
@@ -85,35 +92,54 @@ body {
         padding-bottom:25px;
         font-weight: 300;
         font-size: 1.5em;
-        border-bottom-style: solid;
-        border-width: 1px;
+        /* border-bottom-style: solid;
+        border-width: 1px; */
       }
     }
     #examples{
       ul{
+        padding:0;
         li{
           width:100%;
           overflow:auto;
           list-style:none;
           display:block;
+          padding-top:auto;
+          padding-bottom:auto;
+          color:white;
           .pic{
-            float:left;
-            height:200px;
-            width:200px;
-            border-style:solid;
+            float: left;
+            height: 200px;
+            width: 200px;
+            /* border-style: solid;
+            border-width: 1px; */
             border-radius: 100px;
+            display: block;
+            padding-top: auto;
+            margin-top: 10px;
+            background:none;
+            overflow:hidden;
+            img{
+              border: 0;
+              height: inherit;
+              opacity:.6;
+              border-radius: inherit;
+              &:hover{
+                opacity:1;
+              }
+            }
+
           }
-          p{
+          .content{
+            display:inline-block;
             float:left;
             max-width:50%;
+            margin:4%;
+            font-weight:100;
 
           }
         }
-      }  
       }
-
+    }
   }
-
-
-
 //home-view-----------------------------------------
