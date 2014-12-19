@@ -46,11 +46,14 @@ body {
       list-style: none;
       display: inline-block;
       float: left;
-      
       border-width: 1px;
       margin: 1em;
       font-weight: 300;
       font-size: 22px;
+      a{
+        color:HSLA(0, 0%, 18%, 1);
+        text-decoration:none;
+      }
     }
   }
 }
@@ -73,15 +76,17 @@ body {
       margin-left:auto;
       margin-right:auto;
       width:50%;
-
       li{
         list-style: none;
         float: left;
         font-weight: 100;
-        margin-right: 3em;
-        margin-left: 3em;
+        margin-right: 2em;
+        margin-left: 2em;
         text-align: center;
-
+        a{
+          text-decoration:none;
+          color:white;
+        }
       }
     }
   }
@@ -115,30 +120,34 @@ body {
       ul{
         padding:0;
         li{
-          width:100%;
+          width:33%;
           overflow:auto;
           list-style:none;
-          display:block;
+          display:inline-block;
           padding-top:auto;
           padding-bottom:auto;
           color:white;
           .pic{
             float: left;
-            height: 200px;
-            width: 200px;
+            /* height: 200px;
+            width: 200px; */
             /* border-style: solid;
             border-width: 1px; */
-            border-radius: 100px;
+            /* border-radius: 100px; */
             display: block;
             padding-top: auto;
             margin-top: 10px;
             background:none;
             overflow:hidden;
+            text-align:center;
+            padding:1%;
             img{
-              border: 0;
-              height: inherit;
+              display:block;
+              width: 100%;
               opacity:.6;
               border-radius: inherit;
+              margin-left:auto;
+              margin-right:auto;
               &:hover{
                 opacity:1;
               }
@@ -148,7 +157,6 @@ body {
           .content{
             display:inline-block;
             float:left;
-            max-width:50%;
             margin:4%;
             font-weight:100;
 
